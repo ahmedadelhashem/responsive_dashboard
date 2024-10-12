@@ -20,7 +20,7 @@ abstract class Style {
       fontWeight: FontWeight.w400);
 
   static const TextStyle StyleMedium16 = TextStyle(
-      color: Color(0xFF064060),
+      color: Color(0xFF064061),
       fontSize: 16,
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w500);
