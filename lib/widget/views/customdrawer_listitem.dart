@@ -22,9 +22,7 @@ class _CustomdrawerlistState extends State<Customdrawerlist> {
   int ActiveIndex = 0;
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      physics: NeverScrollableScrollPhysics(),
+    return SliverList.builder(
       itemCount: model.length,
       itemBuilder: (context, index) {
         return GestureDetector(
