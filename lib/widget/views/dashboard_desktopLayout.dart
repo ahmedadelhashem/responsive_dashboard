@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/widget/views/All_Expenses.dart';
+import 'package:responsive_dashboard/widget/views/QuickInvoice.dart';
 import 'package:responsive_dashboard/widget/views/customdrawer.dart';
 
 class DashboardDesktoplayout extends StatelessWidget {
@@ -10,11 +11,16 @@ class DashboardDesktoplayout extends StatelessWidget {
     return Row(children: [
      Expanded(child: Customdrawer(),),
      SizedBox(width:20 ,),
-     Expanded(child: Column(
+     Expanded(
+      flex: 2,
+      child: Column(
       children: [
- AllExpenses()      
+     Expanded(child: AllExpenses()),
+     Expanded(child: QuickInvoice())      
       ],
      ))
     ],);
   }
 }
+
+
