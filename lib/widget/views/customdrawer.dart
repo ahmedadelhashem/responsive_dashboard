@@ -6,7 +6,7 @@ import 'package:responsive_dashboard/widget/views/customdrawer_listitem.dart';
 import 'package:responsive_dashboard/widget/views/user_info.dart';
 
 class Customdrawer extends StatelessWidget {
-  Customdrawer({super.key});
+   Customdrawer({super.key});
   List<DrawerItemmodel> draweritem = [
     DrawerItemmodel(title: 'Setting system', image: Assets.imagesSettings),
     DrawerItemmodel(title: 'Logout account', image: Assets.imagesLogout)

@@ -1,8 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:responsive_dashboard/model/drawer_item.dart';
-import 'package:responsive_dashboard/utils/style.dart';
 import 'package:responsive_dashboard/widget/views/ActiveDraweritem.dart';
 import 'package:responsive_dashboard/widget/views/InActiveDraweritem.dart';
 
