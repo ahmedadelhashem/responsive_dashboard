@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/utils/style.dart';
 import 'package:responsive_dashboard/widget/views/LatestTransaction.dart';
-import 'package:responsive_dashboard/widget/views/Latesttransaction_Listview.dart';
 import 'package:responsive_dashboard/widget/views/QuickInvoiceheader.dart';
+import 'package:responsive_dashboard/widget/views/Quick_invoiceform.dart';
 import 'package:responsive_dashboard/widget/views/customContainer.dart';
 
 class QuickInvoice extends StatelessWidget {
@@ -10,11 +9,14 @@ class QuickInvoice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Customcontainer(
+    return  Customcontainer(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start ,
       children: [
         QuickInvoiceheader(),
-        LatesttransactionListview()
+        Latesttransaction(),
+        Divider(height: 48,),
+       QuickInvoiceform()
       ],
     ));
   }
