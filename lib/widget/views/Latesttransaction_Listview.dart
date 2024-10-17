@@ -12,19 +12,26 @@ static  List<LatesttransactionModel>items=[
 ];
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 80,
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        itemCount: items.length,
-        itemBuilder: (context,Index){
-        return IntrinsicWidth(
-          child: userinfo(
-            latesttransactionModel: items[Index]),
-        );
-      }),
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: items.map((e) => IntrinsicWidth(child: userinfo(latesttransactionModel: e))).toList(),
+      ),
     );
   }
 }
+ 
 
-
+ // لو عدد كبير تستخدمه
+// SizedBox(
+//       height: 80,
+//       child: ListView.builder(
+//         scrollDirection: Axis.horizontal,
+//         itemCount: items.length,
+//         itemBuilder: (context,Index){
+//         return IntrinsicWidth(
+//           child: userinfo(
+//             latesttransactionModel: items[Index]),
+//         );
+//       }),
+//     );
